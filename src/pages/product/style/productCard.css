@@ -41,11 +41,41 @@
     border: 0;
     padding: 5px 10px;
     margin-top: 6px;
-    width: 200px;
+    width: 30%;
     border-radius: 30px;
 }
 
 .product-card .card-info .watch-but a {
     color: white;
     text-decoration: none;
+}
+.admin .remove{
+    background: #9c3737;
+    text-align: center;
+    border: 0;
+    padding: 8px 8px;
+    margin:8px;
+    width: 30%;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.admin .remove a{
+    text-decoration: none;
+    color: white;
+}
+.admin .edit{
+    background: #9c3737;
+    text-align: center;
+    border: 0;
+    padding: 8px 8px;
+    margin:8px;
+    width: 30%;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.admin .edit a{
+    text-decoration: none;
+    color: white;
 }

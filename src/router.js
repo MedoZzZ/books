@@ -10,6 +10,7 @@ import ProductInfo from "./pages/product/components/productInfo";
 import Admin from "./pages/admin/admin";
 import Reader from "./pages/reader/reader";
 import Account from "./shared/account";
+import AdminProduct from "./pages/product/components/adminProduct";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <ProductList />,
+      },
+      {
+        path: "admin/books",
+        element: <Reader />,
       },
       {
         path: "/about",

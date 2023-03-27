@@ -3,6 +3,7 @@ import '../product/style/admin.css'
 import image1 from "../../assets/images/addBook.jpg"
 import image2 from "../../assets/images/showReaders.png"
 import image3 from "../../assets/images/showRequests.jpg"
+import { Link } from "react-router-dom"
 
 const Admin = () =>{
     return(
@@ -14,7 +15,9 @@ const Admin = () =>{
             <div className="card-info1">
                 <h4 className="title1">You Can add a book from here Just click "Add Book" Button</h4>
                 <button className="watch-but1">
-                    Show Available Books
+                <Link to={'../admin/books'}>
+                Show Available Books
+                </Link>
                 </button>
             </div>
         </div>
