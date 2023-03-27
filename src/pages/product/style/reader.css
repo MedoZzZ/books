@@ -1,7 +1,16 @@
-.product-card {
+.product-list {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(250, 243, 237, 0.912);
+}
+
+.product-list .product-card {
     width: 25%;
-    border: 1px solid wheat;
-    border-radius: 15px;
+    margin: 30px;
 }
 
 .product-card .card-img {
@@ -26,26 +35,26 @@
     text-align: center;
     color: brown;
     font-weight: bolds;
-}
-
-.product-card .card-info .description {
-    color: gray;
-    margin: 10px;
-    font-size: 14px;
+    margin: 5px 0px;
 }
 
 .product-card .card-info .watch-but {
-    background: brown;
+    background: rgb(156, 55, 55);
     color: white;
     text-align: center;
     border: 0;
-    padding: 5px 10px;
-    margin-top: 6px;
-    width: 200px;
+    padding: 8px 8px;
+    margin:8px;
+    width: 140px;
     border-radius: 30px;
+    font-size: 14px;
 }
 
 .product-card .card-info .watch-but a {
     color: white;
     text-decoration: none;
+}
+
+.product-card .card-info .watch-but:hover {
+    background-color: brown
 }

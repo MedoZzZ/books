@@ -1,5 +1,5 @@
 import React, { Children } from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, useSearchParams } from "react-router-dom";
 import ProductList from "./pages/product/productList";
 import Login from "./pages/login/login";
 import About from "./pages/about/about";
@@ -7,7 +7,9 @@ import Contact from "./pages/contact/contact";
 import NotFound from './shared/notFound'
 import App from "./App";
 import ProductInfo from "./pages/product/components/productInfo";
-
+import Admin from "./pages/admin/admin";
+import Reader from "./pages/reader/reader";
+import Account from "./shared/account";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +30,18 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/admin",
+        element: <Admin />,
+      },
+      {
+        path: "/reader",
+        element: <Reader />,
+      },
+      {
+        path: '/account',
+        element: <Account />,
       },
       {
         path: "/productInfo/:id",

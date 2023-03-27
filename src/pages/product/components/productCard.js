@@ -1,7 +1,5 @@
 import React from "react"
 import '../style/productCard.css'
-import ProductInfo from './productInfo'
-import { Link } from "react-router-dom"
 const Product = (props) =>{
     return(
         <div className="product-card">
@@ -12,9 +10,10 @@ const Product = (props) =>{
                 <h4 className="title">{props.name}</h4>
                 <p className="description">{props.desc}</p>
                 <button className="watch-but">
-                    <Link to={'/productInfo/'+props.id}>
-                       View
-                    </Link>
+                       Request
+                </button>
+                <button className="watch-but">
+                       Filter
                 </button>
             </div>
         </div>

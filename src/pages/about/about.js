@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div>
-      <section class="about-us">
-        <div class="about">
+      <section className="about-us">
+        <div className="about">
           <img src ={image} alt ="about Image" className="pic"/>
-          <div class="text">
+          <div className="text">
             <h2>About Us</h2>
             <h5>
               Front-end Developer & <span>Designer</span>
@@ -22,7 +22,7 @@ const About = () => {
               magni. Ullam dolorem repudiandae cumque voluptate consequatur
               consectetur, eos provident necessitatibus reiciendis corrupti!
             </p>
-            <div class="data">
+            <div className="data">
               <Link to={'/'} className='backToHome'>Back Home </Link>
             </div>
           </div>
