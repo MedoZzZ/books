@@ -1,0 +1,46 @@
+.request-list {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.request-list .card {
+    background-color: antiquewhite;
+    text-align: center;
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.request-list p {
+    font-size: 25px;
+    margin-bottom: 1%;
+}
+
+.request-list .cont {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.request-list .card .cont .choice .acc {
+    background: rgb(0, 255, 21);
+    color: black;
+    text-align: center;
+    border: 0;
+    padding: 8px 8px;
+    margin: 8px;
+    width: 10%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.request-list .card .cont .choice .dec {
+    background: rgb(255, 0, 0);
+    color: black;
+    text-align: center;
+    border: 0;
+    padding: 8px 8px;
+    margin: 8px;
+    width: 10%;
+    border-radius: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,69 @@
+.product-list {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(250, 243, 237, 0.912);
+}
+
+.product-list .product-card {
+    width: 25%;
+    margin: 30px;
+}
+
+.product-card .card-img {
+    width: 100%;
+    height: 250px;
+}
+
+.product-card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.product-card .card-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card .card-info .title {
+    text-align: center;
+    color: brown;
+    font-weight: bolds;
+    margin: 5px 0px;
+}
+
+.product-card .card-info .watch-but {
+    background: rgb(156, 55, 55);
+    color: white;
+    text-align: center;
+    border: 0;
+    padding: 8px 8px;
+    margin:8px;
+    width: 140px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.product-card .card-info .watch-but a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-card .card-info .watch-but:hover {
+    background-color: brown
+}
+.admin .add-btn {
+    margin-left: 95%;
+    margin-top: 10px;
+}
+.add-book{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
