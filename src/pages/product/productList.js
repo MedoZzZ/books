@@ -1,35 +1,44 @@
 import React from "react";
-import ProductCard from "./components/productCard";
-import "./style/productList.css"
-import {Data} from '../../core/data/books'
-import Empty from "./components/empty";
+import "./style/productList.css";
+import { Link } from "react-router-dom";
+import book1 from "../../assets/images/book1.jfif";
+import book2 from "../../assets/images/book2.jfif";
+import book3 from "../../assets/images/book3.jfif";
+
 const ProductList = () => {
-    const items = Data;
-
-    const viewFromProductList = (id) => {
-        console.log("We are from parent ", id);
-    }
-
-    const displayMovies = () => {
-        return items.map((item) => {
-            return <ProductCard 
-            key={item.id} 
-            id = {item.id}
-            name={item.name} 
-            desc={item.description} 
-            img = {item.image}
-            view = {viewFromProductList}
-            />
-        });
-    }
-    return(
-        <div className="product-list">{
-            items.length > 0 ?
-            displayMovies()
-            :
-            <Empty />
-        }
+  return (
+    <div className="product-list">
+      <div className="product-card">
+        <div className="card-img">
+          <img src={book1} alt="product-card" />
         </div>
-    );
-}
+        <div className="card-info">
+          <h4 className="title">Hebta</h4>
+          <p className="description">It has survived not only five centuries remaining essentially unchanged.</p>
+          <button className="watch-but"><Link to={'/login'}>View</Link></button>
+        </div>
+      </div>
+      <div className="product-card">
+        <div className="card-img">
+          <img src={book2} alt="product-card" />
+        </div>
+        <div className="card-info">
+          <h4 className="title">Hebta</h4>
+          <p className="description">It has survived not only five centuries remaining essentially unchanged.</p>
+          <button className="watch-but"><Link to={'/login'}>View</Link></button>
+        </div>
+      </div>
+      <div className="product-card">
+        <div className="card-img">
+          <img src={book3} alt="product-card" />
+        </div>
+        <div className="card-info">
+          <h4 className="title">Hebta</h4>
+          <p className="description">It has survived not only five centuries remaining essentially unchanged.</p>
+          <button className="watch-but"><Link to={'/login'}>View</Link></button>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default ProductList;

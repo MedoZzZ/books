@@ -1,5 +1,8 @@
 import React from "react";
 import "../product/style/contact.css";
+import ProductChapterList from "../product/productChaptersList";
+import { Link } from "react-router-dom";
+
 const Contact = () => {
   return (
     <div className="containerContact">
@@ -41,8 +44,13 @@ const Contact = () => {
                 Enter your message
               </textarea>
             </div>
+            <br></br>
+          <br></br>
+            <br></br>
             <div className="button">
-              <input type="button" value="Send Now" />
+              <button type="submit" className="send-but">
+                  Send Now
+              </button>
             </div>
           </form>
         </div>

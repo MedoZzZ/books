@@ -104,14 +104,14 @@ textarea {
 
 .right-side .input-box textarea {
     padding-top: 6px;
+
 }
 
-.right-side .button {
+.send-but{
     display: inline-block;
-    margin-top: 70px;
 }
 
-.right-side .button input[type="button"] {
+.send-but{
     color: #fff;
     font-size: 18px;
     outline: none;
@@ -123,7 +123,7 @@ textarea {
     transition: all 0.3s ease;
 }
 
-.button input[type="button"]:hover {
+.send-but:hover {
     background: brown;
     margin: 10px 10px;
 }

@@ -10,14 +10,14 @@
 }
 
 .header .logo {
-    width: 70%;
+    width: 50%;
 }
 
 .header .logo .logo-img {
     width: 100px;
     height: 60px;
     object-fit: contain;
-    margin-left: 70px;
+    margin-left: 60px;
 }
 
 .header .nav {
@@ -30,7 +30,8 @@
 
 .header .nav ul li {
     display: inline-block;
-    padding: 0 0 0 80px;
+    padding: 0 0 0 40px;
+    margin-left: 20px;
 }
 
 .header .nav ul li a {

@@ -33,7 +33,12 @@ const Header = () => {
             </li>
             <li>
                 <h3>
-                  <Link to={'/login'}>LogOut </Link>
+                  <Link to={'/'}>LogOut </Link>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                  <Link to={'/account'}>My Account</Link>
                 </h3>
             </li>
           </ul>
