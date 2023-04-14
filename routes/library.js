@@ -133,42 +133,5 @@ router.delete(
 
 
 // User [get,review]
-// LIST
-router.get("", async (req, res) => {
-  const query = util.promisify(conn.query).bind(conn);
-  const library = await query("select * from library");
-  library.map((lib) =>{
-    lib.pdf_url = "http://" + req.hostname + ":4000/" + lib.pdf_url
-  })
-  res.status(200).json({
-   library
-  });
-});
-
-// Show Book
-router.get("/:id", async (req, res) => {
-  const query = util.promisify(conn.query).bind(conn);
-  const library = await query("select * from library where id = ?",[
-    req.params.id
-  ])
-  if(!library[0]){
-    res.status(404).json({
-      msg : "Not Found"
-    })
-  }
-  library.map((lib) =>{
-    lib.pdf_url = "http://" + req.hostname + ":4000/" + lib.pdf_url
-  })
-  res.status(200).json({
-   library
-  });
-});
-
-// Review
-router.post("/review", (req, res) => {
-  res.status(200).json({
-    msg: "reviewed",
-  });
-});
 
 module.exports = router;
